@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Basic",
+    "price": "$ 199",
+    "duration": "per year",
+    "features": [
+      "Carefully crafted components",
+      "Amazing page examples",
+      "Super friendly support team",
+      "Awesome Support"
+    ],
+    "customCss": {
+      "textAlign": "text-center",
+      "buttonShapeColor": "#2bdbdc"
+    },
+    "planImage": ""
+  },
+  {
+    "name": "Pro",
+    "price": "$ 399",
+    "duration": "per year",
+    "features": [
+      "Carefully crafted components",
+      "Amazing page examples",
+      "Super friendly support team",
+      "Awesome Support"
+    ],
+    "customCss": {
+      "imageClass": "pricing-baloon",
+      "cardClass": "pro",
+      "buttonShapeColor": "#0067f4"
+    },
+    "planImage": "assets/images/baloon.svg"
+  },
+  {
+    "name": "Enterprise",
+    "price": "$ 799",
+    "duration": "per year",
+    "features": [
+      "Carefully crafted components",
+      "Amazing page examples",
+      "Super friendly support team",
+      "Awesome Support"
+    ],
+    "customCss": {
+      "textAlign": "text-right",
+      "imageClass": "pricing-flower",
+      "cardClass": "enterprise",
+      "buttonShapeColor": "#4da422"
+    },
+    "planImage": "assets/images/flower.svg"
+  }
+]

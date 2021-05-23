@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,21 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.color-1 {
+  fill: #2bdbdc;
+  isolation: isolate;
+}
+.cls-1 {
+  opacity: 0.1;
+}
+.cls-2 {
+  opacity: 0.2;
+}
+.cls-3 {
+  opacity: 0.4;
+}
+.cls-4 {
+  opacity: 0.6;
 }
