@@ -1,18 +1,18 @@
 import React from 'react';
 
 const TestimonialCard = ({ data }) => {
-  const { authorImage, authorName, authorDesignation, message } = data;
+  const { Photo, Name, Post, Testimonial_Description } = data;
 
   return (
     <div className="col-lg-4">
       <div className="single-testimonial mt-30 mb-30 text-center">
         <div className="testimonial-image">
-          <img src={authorImage} alt="Author" />
+          <img src={Photo} alt="Author" />
         </div>
         <div className="testimonial-content">
-          <p className="text">{message}</p>
-          <h6 className="author-name">{authorName}</h6>
-          <span className="sub-title">{authorDesignation}</span>
+          <p className="text">{Testimonial_Description}</p>
+          <h6 className="author-name">{Name}</h6>
+          <span className="sub-title">{Post}</span>
         </div>
       </div>
     </div>
@@ -21,10 +21,10 @@ const TestimonialCard = ({ data }) => {
 
 TestimonialCard.defaultProps = {
   data: {
-    authorImage: '',
-    authorName: 'Name',
-    authorDesignation: 'D',
-    message: 'Message',
+    Photo: '',
+    Name: 'Name',
+    Post: 'D',
+    Testimonial_Description: 'Message',
   },
 };
 
