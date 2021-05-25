@@ -49,7 +49,7 @@ $(function () {
         { breakpoint: 576, settings: { slidesToShow: 1, arrows: false } },
       ],
     });
-  }, 3000);
+  }, 5000);
 
   $(window).on('scroll', function (event) {
     if ($(this).scrollTop() > 600) {
