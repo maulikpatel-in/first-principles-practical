@@ -1,9 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import TestimonialCard from '../Components/TestimonialCard';
 import testimonialArr from '../data/testimonial.json';
+import { getTestimonialAPI } from '../config/dataServices/testimonial';
 
 const Testimonial = () => {
+  const [testimonials, setTestimonials] = useState([]);
+  const [pageInfo, setPageInfo] = useState({ first: 10, offset: 0 });
+
+  const fetchAllPosts = async () => {
+    let { data } = await getTestimonialAPI();
+    console.log('TestimonialRes ==> ', data);
+    setTestimonials(data.data);
+  };
+
+  useEffect(() => {
+    fetchAllPosts();
+  }, []);
+
   return (
     <section id="testimonial" className="testimonial-area">
       <div className="container">
@@ -21,9 +35,9 @@ const Testimonial = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="row testimonial-active">
-              {testimonialArr.map((item) => {
+              {testimonials.map((item) => {
                 console.log('item => ', item);
-                return <TestimonialCard />;
+                return <TestimonialCard key={item._id} data={item} />;
               })}
             </div>
           </div>
